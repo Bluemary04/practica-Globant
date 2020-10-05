@@ -42,20 +42,18 @@ body, html {
     padding: 64px;
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
     background-color: #ffffff;
     border-top: 1px solid #a3ada3;
     border-bottom: 1px solid #a3ada3;
     color: #676e67;
 }
-.sales-point{
-    width: 25%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    text-align: center;
-}
+
+  
+  .sales-point {
+    margin: 24px 0;
+    flex-basis: 30%;
+  }
 .sales_title{
     margin: 0;
 }

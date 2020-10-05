@@ -9,32 +9,48 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Práctica de landing page</title>
 </head>
 
 <body>
-    <div class="hero">
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#seccion_1">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#seccion_2">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#seccion_3">Contactanos</a>
+                </li>
+              </ul>
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header> 
+    <div class="hero" id="seccion_1">
         <p class="animate__fadeInLeft animate__delay-4s">Things are <span class="awesome">awesome</span> here at</p>
         <h1 class="awesome banner_title animate__fadeInDown animate__delay-4s">AWESOME<span class= "co_title">CO</span></h1>
         <p class="animate__fadeInRight animate__delay-4s">We <strong>Design</strong> and <strong>Develope Awesome</strong> stuff</p>
     </div>
+    <div id="seccion_2">
 
-    <div class="sales-points">
-        <div class="sales-point">
-            <h2 class="sales_title">Sales Point 1</h2>
-            <p>Maecenas id volutpat tellus. Praesent at rhoncus ante, non sollicitudin nisl.</p>
-        </div>
-        <div class="sales-point">
-            <h2 class="sales_title">Sales Point 2</h2>
-            <p>Maecenas id volutpat tellus. Praesent at rhoncus ante, non sollicitudin nisl.</p>
-        </div>
-        <div class="sales-point">
-            <h2 class="sales_title">Sales Point 3</h2>
-            <p>Maecenas id volutpat tellus. Praesent at rhoncus ante, non sollicitudin nisl.</p>
-        </div>
+    </div>
+    <div id="sales-point-container" class="sales-points">
+        
     </div>
 
-    <div class="cta">
+    <div class="cta" id="seccion_3">
         <div class="cta-text">
             <h2 class="cta-title">Call to <span>Action</span></h2>
             <p>Sed lacus leo, auctor ut odio non, tincidunt blandit nunc. Integer mauris dolor, maximus eu consectetur
@@ -43,6 +59,10 @@
             <a href="" class="btn">Buy Now</a>
         </div>
     </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
